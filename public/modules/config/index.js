@@ -45,11 +45,11 @@
         configService.createExtension = function() {
             return $http.get('/api/v1/config')
             .success(function(data) {
-                console.log("DATA Config:::", data);
-                if(data.creo){
+                console.log("DATA Config:::", data.Creo);
+                if(data.Creo === true){
                     alert("The community extension was created, you can close this window now!");
                 } else {
-                  alert("There was an error configuring the community extension. Message:" + body);
+                    alert("There was an error configuring the community extension. Message:" + body);
                 }
                 return data;
             }).error(function(status){

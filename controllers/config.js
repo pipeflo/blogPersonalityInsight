@@ -9,12 +9,12 @@ module.exports = {
 	configure: function (req, res) {
 
 		var post_data = JSON.stringify({
-		  'name': 'Blog Personality Insights 2',
+		  'name': 'Blog Personality Insights',
 		  'description': 'Application to get the Blogs of a Community and then analyze them with the Watson Personality Insights service',
 		  'type':'community_widget',
 		  'urls':{},
 		  'payload': {
-		    'defId': 'Blog Personality Insights 2',
+		    'defId': 'Blog Personality Insights',
 		    'showInPalette': 'true',
 		    'primaryWidget': 'true',
 		    'modes': 'view',
