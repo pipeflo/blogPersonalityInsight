@@ -1,12 +1,10 @@
-https://apps.na.collabserv.com/appregistry/api/v1/extensions
-
 {
-  "name": "Actualizaciones Recientes",
-  "description": "Muro con noticiaas de la comunidad para la página de entrada",
+  "name": "Blog Personality Insights",
+  "description": "Application to get the Blogs of a Community and then analyze them with the Watson Personality Insights service",
   "type":"community_widget",
   "urls":{},
   "payload": {
-    "defId": "Actualizaciones Recientes",
+    "defId": "Blog Personality Insights",
     "showInPalette": "true",
     "primaryWidget": "true",
     "modes": "view",
@@ -14,7 +12,7 @@ https://apps.na.collabserv.com/appregistry/api/v1/extensions
     "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml",
     "itemSet": [
       {
-        "value": "https://familiastream.mybluemix.net",
+        "value": "https://<application-name>.mybluemix.net",
         "name": "url"
       },
       {

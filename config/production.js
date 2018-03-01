@@ -13,7 +13,7 @@ module.exports = {
 	},
 
 	PersonalityInsights: {
-		user: "",
+		username: "",
 		password: ""
 	}
 }
