@@ -8,8 +8,7 @@ module.exports = {
 		hostname: 'apps.na.collabserv.com',
 	  clientID: '<ClientID>',
 	  clientSecret: '<ClientSecret>',
-	  callbackURL: 'https://<application-name>.mybluemix.net/callback', //https is important here. Connections Cloud doesn't accept http callback urls
-		appDomain: "https://<application-name>.mybluemix.net"
+	  applicationName: '<application-name>'
 	},
 
 	PersonalityInsights: {

@@ -81,7 +81,7 @@ module.exports = {
 			'grant_type': 'authorization_code',
 			'client_id': ConnectionsConfig.clientID,
 			'client_secret': ConnectionsConfig.clientSecret,
-			'callback_uri' : 'https://' + ConnectionsConfig.appDomain + '/#/auth/ibm-connections-cloud/callback'
+			'callback_uri' : 'https://' + ConnectionsConfig.appName + '.mybluemix.net/#/auth/ibm-connections-cloud/callback'
 			//'client_id': 'app_20051314_1464998684769',
 			//'client_secret': 'b6f926dc282a27c3431fd3d6733417a3981429b054a7d960a7d123085a291da1da9d4c6fdb3fb07ebbd83ca220e482bf1d6bef3fb782de9c8ce18021cf3c9657c5c9eaaa9cdbb16b5e00ab062a178983ee28eb5b780a4dad35e07282a83ff81776dc122f1659b6d5d7cbc8e474708401067bbe8e26c71afe3668a70fb79771d',
 			//'callback_uri' : 'https://localhost:3000/#/auth/ibm-connections-cloud/callback'
