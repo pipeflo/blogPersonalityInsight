@@ -30,7 +30,7 @@ module.exports = {
 		        'name': 'width'
 		      },
 		      {
-		        'value': '400px',
+		        'value': '800px',
 		        'name': 'height'
 		      }
 		    ]
