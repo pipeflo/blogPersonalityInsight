@@ -1,32 +1,32 @@
 (function(){
 	'use strict';
 
-	angular.module('myApp.Blogs', ['ngRoute'])
+	angular.module('myApp.Config', ['ngRoute'])
 
 	.config(['$routeProvider', function($routeProvider) {
 	  $routeProvider
 	  .when('/blogs', {
-	    templateUrl: 'modules/blogs/views/index.html',
-	    controller: 'BlogsController',
-        activetab: 'blogs'
+	    templateUrl: 'modules/config/views/index.html',
+	    controller: 'ConfigController',
+        activetab: 'config'
 	  })
 	  ;
 	}])
-	.controller('BlogsController', BlogsController)
-    .factory('CommunityService', CommunityService)
+	.controller('ConfigController', ConfigController)
+  .factory('ConfigService', ConfigService)
 	;
 
-	function BlogsController($scope, $http, $window, CommunityService){
+	function ConfigController($scope, $http, $window, ConfigService){
         //console.log("Info Comunidad", $window.localStorage.getItem('infoComunidad'));
         $scope.$on('$viewContentLoaded', function(){
 
-            console.log("Entró a Controlador About");
+            console.log("Entró a Controlador Config");
             //console.log("Info Comunidad", $window.localStorage.getItem('infoComunidad'));
             $scope.comunidad = JSON.parse($window.localStorage.getItem('infoComunidad')).source.resourceName;
 
         });
 
-		CommunityService.getBlogs()
+		ConfigService.getBlogs()
         .success(function(data){
             //console.log("BLOGS:::", data);
             $scope.blogs = data;

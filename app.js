@@ -46,11 +46,13 @@ api.activityStream = require('./routes/api/v1/activityStream');
 api.communities = require('./routes/api/v1/communities');
 api.auth = require('./routes/api/v1/auth');
 api.watson = require('./routes/api/v1/watson');
+api.config = require('./routes/api/v1/config');
 
 app.use('/api/v1/activitystream', api.activityStream);
 app.use('/api/v1/auth', api.auth);
 app.use('/api/v1/communities', api.communities);
 app.use('/api/v1/watson', api.watson);
+app.use('/api/v1/config', api.config);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

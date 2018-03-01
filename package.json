@@ -18,8 +18,8 @@
     "morgan": "~1.5.3",
     "request": "^2.69.0",
     "serve-favicon": "~2.3.0",
-    "xmlreader" : "0.2.3",
+    "xmlreader": "0.2.3",
     "watson-developer-cloud": "1.9.4",
-    "remove-markdown" : "0.1.0"
+    "remove-markdown": "0.1.0"
   }
 }

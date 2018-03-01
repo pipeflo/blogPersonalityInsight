@@ -33,12 +33,15 @@
             <!-- Navigation -->
             <div class="col-md-12" ng-controller="HeaderCtrl">
                 <ul class="nav nav-tabs">
-                    
+
                     <li ng-class="{ active: isActive('/blogs')}">
                         <a href="#/blogs">Blogs</a>
                     </li>
                     <li ng-class="{ active: isActive('/stream')}">
                         <a href="#/stream">Stream</a>
+                    </li>
+                    <li ng-class="{ active: isActive('/config')}">
+                        <a href="#/config">Config</a>
                     </li>
                 </ul>
             </div>
@@ -51,17 +54,17 @@
             </div>
         </div>
 
-    
+
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                
+
             </div>
         </div>
     </footer>
-    
+
     <!-- Angular -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -70,7 +73,7 @@
     <script src="bower_components/angular-markdown-directive/markdown.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/angular-moment/angular-moment.js"></script>
-    
+
     <!-- services -->
     <script src="modules/auth/index.js"></script>
 
@@ -83,21 +86,22 @@
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
     <script src="modules/blogs/index.js"></script>
+    <script src="modules/config/index.js"></script>
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
-    
+
     <!-- Custom template JS -->
     <script src="assets/js/scripts.js"></script>
-    
+
     <!-- D3Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
-    
+
     <!-- Gráfica Personality Insights -->
-    <script src="https://personality-insights-livedemo.mybluemix.net/js/components/personality-sunburst-chart.standalone.min.js"></script>
+    <script src="bower_components/sunburst-chart/sunburst-chart.js"></script>
 
 </body>
 

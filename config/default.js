@@ -8,12 +8,11 @@ module.exports = {
 		hostname: 'apps.na.collabserv.com',
 	  clientID: '<ClientID>',
 	  clientSecret: '<ClientSecret>',
-	  callbackURL: 'https://localhost:3000/callback', //https is important here. Connections Cloud doesn't accept http callback urls
-		appDomain: "https://localhost:3000"
+	  url: 'http://localhost:3000'
 	},
 
 	PersonalityInsights: {
-		username: "<PI-Username>",
-		password: "<PI-Password>"
+		username: "<PI Username>",
+		password: "<PI Password>"
 	}
 }

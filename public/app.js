@@ -9,6 +9,7 @@ angular.module('myApp', [
     'myApp.version',
     'myApp.Stream',
     'myApp.Blogs',
+    'myApp.Config',
     'btford.markdown',
     'angularMoment'
 ]).
@@ -62,8 +63,8 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
 .controller("AuthCtrl", ['$window',
     function($window) {
         $window.location.href = 'https://apps.na.collabserv.com/manage/oauth2/authorize?callback_uri=' +
-                        encodeURIComponent('https://<applications-name>.mybluemix.net/#/auth/ibm-connections-cloud/callback') +
-                        '&client_id=<Client-Id>&response_type=code';
+                        encodeURIComponent('https://<application-name>.mybluemix.net/#/auth/ibm-connections-cloud/callback') +
+                        '&client_id=<ClientID>&response_type=code';
     }
 ])
 .controller("CallbackCtrl", ['$routeParams', '$location', 'Auth',
