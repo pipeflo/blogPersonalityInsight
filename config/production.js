@@ -8,7 +8,7 @@ module.exports = {
 		hostname: 'apps.na.collabserv.com',
 	  clientID: '<ClientID>',
 	  clientSecret: '<ClientSecret>',
-	  url: 'http://<application-name>.mybluemix.net'
+	  url: 'https://<application-name>.mybluemix.net'
 	},
 
 	PersonalityInsights: {
